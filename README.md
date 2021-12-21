@@ -1,24 +1,43 @@
-# project_x
+# Greetings vue
 
-## Project setup
-```
-npm install
-```
+A vue component for greeting users
 
-### Compiles and hot-reloads for development
+## Installation
+
 ```
-npm run serve
+npm install greetings-vue
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+## Registering as a global component
+
+```js
+import Vue from "vue";
+import GreetingsVue from "greetings-vue";
+
+Vue.component("greetings-vue", GreetingsVue);
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Local installation
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+````html
+<template>
+  <greeting-vue :username="username" />
+</template>
+
+
+<script>
+import GreetingsVue from 'greetings-vue';
+export default {
+  data() {
+    return {
+      username: "Jane Doe",
+    };
+  },
+
+  components: {
+    GreetingsVue,
+  },
+};
+</script>
+````
+
