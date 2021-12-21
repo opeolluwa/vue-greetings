@@ -1,8 +1,8 @@
 {
-  "name": "project_x",
-  "version": "1.0.0",
+  "name": "greetings-vue",
+  "version": "0.1.0",
   "private": true,
-  "description": "a chruch network web application from Mr. Emmanuel <possible",
+  "description": "A component for greeting users",
   "author": {
     "name": "Adeoye Adefemi Opeoluwa\\"
   },
@@ -15,9 +15,7 @@
   "main": "index.js",
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "vue-router": "^3.2.0",
-    "vuex": "^3.4.0"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -49,15 +47,15 @@
     "last 2 versions",
     "not dead"
   ],
-  "_id": "project_x@1.0.0",
+  "_id": "greetings-vue@0.1.0",
   "bugs": {
-    "url": "https://github.com/opeolluwa/project_x/issues"
+    "url": "https://github.com/opeolluwa/greetings-vue/issues"
   },
-  "homepage": "https://github.com/opeolluwa/project_x#readme",
+  "homepage": "https://github.com/opeolluwa/greetings-vue#readme",
   "license": "MIT",
   "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opeolluwa/project_x.git"
+    "url": "git+https://github.com/opeolluwa/greetings-vue.git"
   }
 }
