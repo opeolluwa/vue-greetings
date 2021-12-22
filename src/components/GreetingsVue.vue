@@ -1,15 +1,13 @@
 <template>
-  <div>
-       age is {{age}}
-  </div>
+  <div>age is {{ message }}</div>
 </template>
 
 <script>
+const { message } = require("./greets");
 export default {
   data() {
     return {
-      age: "",
-      date : new Date()
+      message,
     };
   },
   props: {
@@ -18,9 +16,6 @@ export default {
       required: false,
     },
   },
-  created(){
-      this.age = 76
-  }
 };
 </script>
 
