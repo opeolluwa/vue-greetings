@@ -1,13 +1,9 @@
-# Vue Greetings
-
-A vue component that returns greeting based on day, time and season. Ideal for welcome messages in dashboard and user profile 
-
 ## Installation
 - Vue CLI
 ```bash
 npm install vue-greetings
 ``` 
-- script tag
+- using script tag
 ```html
 <script src="https://unpkg.com/vue-greetings@0.1.7/dist/vue-greetings.min.js"></script>
 ```
@@ -40,9 +36,5 @@ export default {
 }
 </script>
 ```
-
-## Demo
-See live [demo]()
-
 
 
