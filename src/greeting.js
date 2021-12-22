@@ -162,5 +162,5 @@ var greeting = {
 };
 // set message in ths o
 message = greeting.ocassion || greeting.time || greeting.day || greeting.other;
-// console.log(message)
+console.log(message)
 export { message };
