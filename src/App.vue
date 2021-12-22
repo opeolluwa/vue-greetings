@@ -1,10 +1,6 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div>
+    <greetings-vue />
   </div>
 </template>
 
@@ -32,8 +28,13 @@
 </style>
 
 <script>
+import GreetingsVue from "./components/GreetingsVue.vue";
 export default {
-  
-}
+  components: {
+    GreetingsVue,
+  },
+};
 </script>
 
+
+GreetingsVue

@@ -3,21 +3,27 @@ Greeting.js@0.1.0
 Author : Adeoye Adefemi Opeoluwa
 Github : https://github.com/opeolluwa
 */
+
 //Get the Day from Client Machine
-var _d = new Date();
-var day = _d.getDay();
-var hour = _d.getHours();
-var new_month = (_d.getDate() == 1);
-var christmas = ((_d.getMonth() == 11) && (_d.getDate() == 25));
-var valentine = ((_d.getMonth() == 1) && (_d.getDate() == 14));
-var message;
+const _d = new Date();
+const day = _d.getDay();
+const hour = _d.getHours();
+const new_month = (_d.getDate() == 1);
+const christmas = ((_d.getMonth() == 11) && (_d.getDate() == 25));
+const valentine = ((_d.getMonth() == 1) && (_d.getDate() == 14))
+let message;
+
+
 // an Util Function to Get Random Items in This Case, Greeting Options
-function _r(array) {
-    var index = Math.round(Math.random() * (array.length - 1));
-    return array[index];
+function _r(array: any): string {
+    const index = Math.round(Math.random() * (array.length - 1));
+    return array[index]
 }
+
+
+
 //COLLECTION OF POSSIBLE VALUES
-var options = {
+const options = {
     monday: [
         "Hello Monday!",
         "Monday is here!",
@@ -36,6 +42,7 @@ var options = {
         "Time for throwbabk",
         "let's do some throwback",
         "Hectic week, huh? ",
+
     ],
     friday: [
         "#TGIF",
@@ -104,6 +111,8 @@ var options = {
         "Hi there!",
         "Aren't you sleeping?"
     ],
+
+
     //--------------------------------Special Occasion--------------------
     new_month: [
         "Happy new month!",
@@ -121,14 +130,20 @@ var options = {
     valentine: [
         "Spread da love"
     ],
+
+
     other: [
         "Holla!",
         "Hello!",
         "Welcome",
         "Howdy?"
     ]
-};
-var greeting = {
+}
+
+
+const greeting = {
+
+
     //If Sunday 
     day: (day == 0) ? _r(options.sunday) :
         //if monday
@@ -140,6 +155,8 @@ var greeting = {
                     //if saturday
                     (day == 6) ? _r(options.saturday) :
                         '',
+
+
     //GREET BY HOUR: MORNING NIGHT, AFTERNOON & EVENING
     //If between 8:00am & 10:00am
     time: (hour >= 6 && hour <= 8) ? _r(options.morning) :
@@ -151,6 +168,8 @@ var greeting = {
                 (hour >= 16 && hour <= 20) ? _r(options.evening) :
                     //if midnight between 1:00AM - 3:00AM
                     (hour >= 1 && hour <= 3) ? _r(options.midnignt) : '',
+
+
     //SPECIAL OCCASIONS
     ocassion: (new_month) ? _r(options.new_month) :
         //christmas
@@ -158,8 +177,10 @@ var greeting = {
             //valentine
             (valentine) ? _r(options.valentine) : '',
     other: _r(options.other)
-};
+}
+
+
 // set message in ths o
-message = greeting.ocassion || greeting.time || greeting.day || greeting.other;
+message = greeting.ocassion || greeting.time || greeting.day || greeting.other
 // console.log(message)
 export { message };
