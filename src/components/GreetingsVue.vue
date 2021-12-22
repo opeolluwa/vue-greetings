@@ -20,4 +20,7 @@ export default {
 </script>
 
 <style scoped>
+div {
+  text-transform: capitalize;
+}
 </style>
