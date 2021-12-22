@@ -72,10 +72,11 @@ var options = {
         "Have a fruitful day"
     ],
     day_break: [
-        "How is your day going",
-        "How has the day being",
-        "A fresh motning, huh?",
+        "How is your day going?",
+        "How has the day been?",
+        "A fresh morning, huh?",
         "How's the weather?",
+        "How's the weather outside?",
         "Howdy?"
     ],
     afternoon: [
