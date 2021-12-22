@@ -8,7 +8,7 @@ A vue component for greeting users
 npm install greetings-vue
 ```
 
-## Registering as a global component
+## Register as a Global Component
 
 ```js
 import Vue from "vue";
@@ -17,27 +17,21 @@ import GreetingsVue from "greetings-vue";
 Vue.component("greetings-vue", GreetingsVue);
 ```
 
-## Local installation
+## Register as Local Component
 
-````html
+```html
 <template>
-  <greeting-vue :username="username" />
+  <greeting-vue />
 </template>
 
-
 <script>
-import GreetingsVue from 'greetings-vue';
-export default {
-  data() {
-    return {
-      username: "Jane Doe",
-    };
-  },
-
-  components: {
-    GreetingsVue,
-  },
-};
+  import GreetingsVue from 'greetings-vue';
+  export default {
+    ...
+    components: {
+      GreetingsVue,
+    }
+    ...
+  };
 </script>
-````
-
+```
