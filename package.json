@@ -1,6 +1,6 @@
 {
   "name": "vue-greetings",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A vue component that returns greeting based on day, time and season. Ideal for welcome messages in dashboard and user profile",
   "author": {
     "name": "Adeoye Adefemi Opeoluwa\\"
