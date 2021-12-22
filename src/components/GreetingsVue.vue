@@ -1,9 +1,9 @@
 <template>
-  <div>age is {{ message }}</div>
+  <div>{{ message }}</div>
 </template>
 
 <script>
-const { message } = require("./greets");
+const { message } = require("./greeting");
 export default {
   data() {
     return {
