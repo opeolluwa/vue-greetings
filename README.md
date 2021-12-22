@@ -1,12 +1,12 @@
-# Greetings vue
+# Vue Greetings
 
-A vue component for greeting users
+A vue component that returns greeting based on day, time and season. Ideal for welcome messages in dashboard and user profile 
 
 ## Installation
 
-```
-npm install greetings-vue
-```
+```bash
+npm install vue-greetings
+``` 
 
 ## Register as a Global Component
 
@@ -21,17 +21,26 @@ Vue.component("greetings-vue", GreetingsVue);
 
 ```html
 <template>
-  <greeting-vue />
+  <div class="about">
+    <h1>This is an about page</h1>
+    <vue-greetings/>
+  </div>
 </template>
 
+
+
+
 <script>
-  import GreetingsVue from 'greetings-vue';
-  export default {
-    ...
-    components: {
-      GreetingsVue,
-    }
-    ...
-  };
+import VueGreetings from "vue-greetings"
+export default {
+  components:{
+ VueGreetings
+  }
+}
 </script>
 ```
+
+
+
+
+
