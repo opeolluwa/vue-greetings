@@ -4,4 +4,4 @@ Greeting Vue is inspired of adding more fun to human-application interactivity v
 
 - [Installation](installation.md)
 - [Contributions](./contribution.md)
-- [Demo](./demo/index.html)
+- [Demo](https://vue-greetings.vercel.app/)
