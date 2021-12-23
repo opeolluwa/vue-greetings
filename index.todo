@@ -1,0 +1,8 @@
+- Translate in multiple language
+- try writing docs with vuepress
+- refactor code to use switch instead of ternary
+- use formal greetings
+- extend greetings
+- add animation
+- make translation request on load 
+- add signature to docs page
