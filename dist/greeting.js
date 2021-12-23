@@ -2,7 +2,6 @@
 Greeting.js@0.1.8
 Author : Adeoye Adefemi Opeoluwa
 Github : https://github.com/opeolluwa
-
 */
 //Get the Day from Client Machine
 var _d = new Date();
@@ -134,7 +133,8 @@ var options = {
     ]
 };
 //_g = greetings
-var _g = {
+var _g;
+_g = {
     time: null,
     other: null,
     ocassion: null,

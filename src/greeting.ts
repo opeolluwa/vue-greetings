@@ -146,13 +146,19 @@ const options = {
 
 
 //_g = greetings
-const _g = {
+let _g: {
+    time: string | null,
+    other: string | null,
+    ocassion: string | null,
+    day: string | null
+}
+
+_g = {
     time: null,
     other: null,
     ocassion: null,
     day: null
-}
-
+};
 
 //HANDLE DAY PROCESSING 
 switch (day) {
