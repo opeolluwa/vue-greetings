@@ -2,7 +2,6 @@
 Greeting.js@0.1.8
 Author : Adeoye Adefemi Opeoluwa
 Github : https://github.com/opeolluwa
-
 */
 
 //Get the Day from Client Machine
