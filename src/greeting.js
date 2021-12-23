@@ -1,7 +1,8 @@
 /*
-Greeting.js@0.1.0
+Greeting.js@0.1.8
 Author : Adeoye Adefemi Opeoluwa
 Github : https://github.com/opeolluwa
+
 */
 //Get the Day from Client Machine
 var _d = new Date();
@@ -33,7 +34,7 @@ var options = {
     thursday: [
         "#TBT",
         "Throwback Thursday😋",
-        "Time for throwbabk",
+        "Time for throwback",
         "let's do some throwback",
         "Hectic week, huh? ",
     ],
@@ -65,18 +66,16 @@ var options = {
     morning: [
         "Blessed morning",
         "Good Morning",
-        "Bonjour!",
         "Trust you slept well",
         "Beautiful morning",
         "A new day",
         "Have a fruitful day"
     ],
     day_break: [
-        "How is your day going?",
-        "How has the day been?",
-        "A fresh morning, huh?",
+        "How is your day going",
+        "How has the day being",
+        "A fresh motning, huh?",
         "How's the weather?",
-        "How's the weather outside?",
         "Howdy?"
     ],
     afternoon: [
@@ -94,14 +93,15 @@ var options = {
         "Good evening",
         "How was your day",
         "How did your day go",
-        "Bonsoir"
     ],
     midnignt: [
         "You up so late ?",
         "You should probably be in bed",
         "You should probably be in bed by now",
         "Surprised to see you up so late",
-        "Up so early huh ?",
+        "Up so early, huh?",
+        "Up so early?",
+        "Working Late",
         "Hi there!",
         "Aren't you sleeping?"
     ],
@@ -113,54 +113,94 @@ var options = {
         "It's a new month!"
     ],
     new_year: [
-        "Happy new year"
+        "Happy new year",
+        "Happy Holidays"
     ],
     christmas: [
-        "Merry Christmas"
+        "Merry Christmas",
+        "Season greetings"
     ],
     //TODO: boxing_day: [],
     valentine: [
-        "Spread da love"
+        "It's Valentine",
+        "Happy Valentine"
     ],
     other: [
         "Holla!",
         "Hello!",
         "Welcome",
-        "Howdy?"
+        "Howdy?",
+        "Ciao!"
     ]
 };
-var greeting = {
-    //If Sunday 
-    day: (day == 0) ? _r(options.sunday) :
-        //if monday
-        (day == 1) ? _r(options.monday) :
-            //if thursday
-            (day == 4) ? _r(options.thursday) :
-                //if friday 
-                (day == 5) ? _r(options.friday) :
-                    //if saturday
-                    (day == 6) ? _r(options.saturday) :
-                        '',
-    //GREET BY HOUR: MORNING NIGHT, AFTERNOON & EVENING
-    //If between 8:00am & 10:00am
-    time: (hour >= 6 && hour <= 8) ? _r(options.morning) :
-        //if between 8:00AM & 10:00AM
-        (hour >= 8 && hour <= 10) ? _r(options.day_break) :
-            //if afternoon 12:00PM - 3:00PM
-            (hour >= 12 && hour <= 15) ? _r(options.afternoon) :
-                //if evening : 4:00PM - 8:00PM
-                (hour >= 16 && hour <= 20) ? _r(options.evening) :
-                    //if midnight between 1:00AM - 3:00AM
-                    (hour >= 1 && hour <= 3) ? _r(options.midnignt) : '',
-    //SPECIAL OCCASIONS
-    ocassion: (new_month) ? _r(options.new_month) :
-        //christmas
-        (christmas) ? _r(options.christmas) :
-            //valentine
-            (valentine) ? _r(options.valentine) : '',
-    other: _r(options.other)
+//_g = greetings
+var _g = {
+    time: null,
+    other: null,
+    ocassion: null,
+    day: null
 };
-// set message in ths o
-message = greeting.ocassion || greeting.time || greeting.day || greeting.other;
-console.log(message)
+//HANDLE DAY PROCESSING 
+switch (day) {
+    //If Sunday
+    case 0:
+        _g.day = _r(options.sunday);
+        break;
+    case 1:
+        //If Monday
+        _g.day = _r(options.sunday);
+        break;
+    //If Thursday
+    case 4:
+        _g.day = _r(options.thursday);
+        break;
+    //If Friday 
+    case 5:
+        _g.day = _r(options.friday);
+        break;
+    //If Saturday
+    case 6:
+        _g.day = _r(options.saturday);
+        break;
+    default:
+        _g.day = "";
+        break;
+}
+//HANDLE TIME PROCESSING :: GREET BY HOUR: MORNING NIGHT, AFTERNOON & EVENING
+switch (hour) {
+    //If between 6:00am & 8:00am
+    case (hour >= 6 && hour <= 8):
+        _g.time = _r(options.morning);
+        break;
+    //if between 8:00AM & 10:00AM
+    case (hour >= 8 && hour <= 10):
+        _g.time = _r(options.day_break);
+        break;
+    //if afternoon 12:00PM - 3:00PM
+    case (hour >= 12 && hour <= 15):
+        _g.time = _r(options.afternoon);
+        break;
+    //if evening : 4:00PM - 8:00PM
+    case (hour >= 16 && hour <= 20):
+        _g.time = _r(options.evening);
+        break;
+    //if midnight between 1:00AM - 3:00AM
+    case (hour >= 1 && hour <= 3):
+        _g.time = _r(options.midnignt);
+        break;
+    default:
+        _g.time = "";
+        break;
+}
+// HANDLE SPECIAL OCCASIONS
+_g.ocassion = (new_month) ? _r(options.new_month) :
+    //christmas
+    (christmas) ? _r(options.christmas) :
+        //valentine
+        (valentine) ? _r(options.valentine) : '';
+//HANDLE EXCEPTION
+_g.other = _r(options.other);
+// set in message and export 
+message = _g.ocassion || _g.time || _g.day || _g.other;
+console.log(message);
 export { message };
