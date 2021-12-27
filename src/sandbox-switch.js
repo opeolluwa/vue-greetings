@@ -1,23 +1,29 @@
 /*
-Greeting.js@0.1.8
+Greeting.js@0.1.0
 Author : Adeoye Adefemi Opeoluwa
 Github : https://github.com/opeolluwa
 */
+
 //Get the Day from Client Machine
-var _d = new Date();
-var day = _d.getDay();
-var hour = _d.getHours();
-var new_month = (_d.getDate() == 1);
-var christmas = ((_d.getMonth() == 11) && (_d.getDate() == 25));
-var valentine = ((_d.getMonth() == 1) && (_d.getDate() == 14));
-var message;
+const _d = new Date();
+const day = _d.getDay();
+const hour = _d.getHours();
+const new_month = (_d.getDate() == 1);
+const christmas = ((_d.getMonth() == 11) && (_d.getDate() == 25));
+const valentine = ((_d.getMonth() == 1) && (_d.getDate() == 14))
+let message;
+
+
 // an Util Function to Get Random Items in This Case, Greeting Options
 function _r(array) {
-    var index = Math.round(Math.random() * (array.length - 1));
-    return array[index];
+    const index = Math.round(Math.random() * (array.length - 1));
+    return array[index]
 }
+
+
+
 //COLLECTION OF POSSIBLE VALUES
-var options = {
+const options = {
     monday: [
         "Hello Monday!",
         "Monday is here!",
@@ -33,9 +39,10 @@ var options = {
     thursday: [
         "#TBT",
         "Throwback Thursday😋",
-        "Time for throwback",
+        "Time for throwbabk",
         "let's do some throwback",
         "Hectic week, huh? ",
+
     ],
     friday: [
         "#TGIF",
@@ -65,6 +72,7 @@ var options = {
     morning: [
         "Blessed morning",
         "Good Morning",
+        "Bonjour!",
         "Trust you slept well",
         "Beautiful morning",
         "A new day",
@@ -92,18 +100,19 @@ var options = {
         "Good evening",
         "How was your day",
         "How did your day go",
+        "Bonsoir"
     ],
     midnignt: [
         "You up so late ?",
         "You should probably be in bed",
         "You should probably be in bed by now",
         "Surprised to see you up so late",
-        "Up so early, huh?",
-        "Up so early?",
-        "Working Late",
+        "Up so early huh ?",
         "Hi there!",
         "Aren't you sleeping?"
     ],
+
+
     //--------------------------------Special Occasion--------------------
     new_month: [
         "Happy new month!",
@@ -124,22 +133,26 @@ var options = {
         "It's Valentine",
         "Happy Valentine"
     ],
+
+
     other: [
         "Holla!",
         "Hello!",
         "Welcome",
-        "Howdy?",
-        "Ciao!"
+        "Howdy?"
     ]
-};
+}
+
+
 //_g = greetings
-var _g;
-_g = {
+const _g = {
     time: null,
     other: null,
     ocassion: null,
     day: null
-};
+}
+
+
 //HANDLE DAY PROCESSING 
 switch (day) {
     //If Sunday
@@ -166,6 +179,8 @@ switch (day) {
         _g.day = "";
         break;
 }
+
+
 //HANDLE TIME PROCESSING :: GREET BY HOUR: MORNING NIGHT, AFTERNOON & EVENING
 switch (hour) {
     //If between 6:00am & 8:00am
@@ -189,18 +204,23 @@ switch (hour) {
         _g.time = _r(options.midnignt);
         break;
     default:
-        _g.time = "";
+        _g.time = ""
         break;
 }
+
 // HANDLE SPECIAL OCCASIONS
 _g.ocassion = (new_month) ? _r(options.new_month) :
     //christmas
     (christmas) ? _r(options.christmas) :
         //valentine
         (valentine) ? _r(options.valentine) : '';
+
+
 //HANDLE EXCEPTION
 _g.other = _r(options.other);
+
+
 // set in message and export 
-message = _g.ocassion || _g.time || _g.day || _g.other;
-console.log(message);
+message = _g.ocassion || _g.time || _g.day || _g.other
+console.log(message)
 export { message };
