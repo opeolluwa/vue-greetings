@@ -1,0 +1,19 @@
+{
+  "name": "vue-greetings",
+  "version": "0.0.1",
+  "description": "A vue component that returns greeting based on day, time and season. Ideal for welcome messages in dashb",
+  "main": "index.js",
+  "authors": {
+    "name": "Adeoye Adefemi Opeoluwa",
+    "email": "oard and user profile adefemiadeoye@yahoo.com"
+  },
+  "repository": "https://github.com/opeolluwa/vue-greetings/vue-greetings",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
