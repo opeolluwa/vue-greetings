@@ -1,5 +1,5 @@
 <template>
-  <div>{{ message }}</div>
+  <div class="vue__greetings">{{ message }}</div>
 </template>
 
 <script>
@@ -20,7 +20,8 @@ export default {
 </script>
 
 <style scoped>
-div {
+.vue__greetings {
   text-transform: capitalize;
+  font-size: 80%;
 }
 </style>

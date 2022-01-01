@@ -148,7 +148,7 @@ switch (day) {
         break;
     case 1:
         //If Monday
-        _g.day = _r(options.sunday);
+        _g.day = _r(options.monday);
         break;
     //If Thursday
     case 4:
