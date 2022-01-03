@@ -1,7 +1,11 @@
+#ignore node_modules in every dir
+
 .DS_Store
 node_modules/
 ./demo
+docs/node_modules
 
+docs--old
 # local env files
 .env.local
 .env.*.local

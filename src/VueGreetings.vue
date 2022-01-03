@@ -1,5 +1,5 @@
 <template>
-  <div>{{ message }}</div>
+  <div class="vue__greetings">{{ message }}</div>
 </template>
 
 <script>
@@ -10,6 +10,7 @@ export default {
       message,
     };
   },
+  //TODO:
   props: {
     username: {
       type: String,
@@ -20,7 +21,4 @@ export default {
 </script>
 
 <style scoped>
-div {
-  text-transform: capitalize;
-}
 </style>

@@ -1,0 +1,7 @@
+tsconfig.json 
+index.todo
+.vscode
+.gitignore
+docs
+docs--old
+node_modules
