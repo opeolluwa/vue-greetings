@@ -26,7 +26,7 @@ then in vue components
 - Register as Local Component
 ```html
 <template>
-  <div class="about">
+  <div>
     <vue-greetings/>
   </div>
 </template>
