@@ -38,12 +38,12 @@ module.exports = {
         link: '/guide/',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Demo',
+        link: '/demo/'
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'Github',
+        link: 'https://github.com/opeolluwa/vue-greetings'
       }
     ],
     sidebar: {
@@ -53,7 +53,10 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'using-vue',
+            'installation',
+            'integration',
+            'customization',
+            'contributing'
           ]
         }
       ],
