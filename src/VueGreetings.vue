@@ -10,6 +10,7 @@ export default {
       message,
     };
   },
+  //TODO:
   props: {
     username: {
       type: String,
@@ -20,8 +21,4 @@ export default {
 </script>
 
 <style scoped>
-.vue__greetings {
-  text-transform: capitalize;
-  font-size: 80%;
-}
 </style>
