@@ -23,3 +23,5 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+id_ed25519.pub
+index.todo

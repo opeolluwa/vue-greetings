@@ -3,5 +3,5 @@ index.todo
 .vscode
 .gitignore
 docs
-docs--old
+deploy.sh
 node_modules
