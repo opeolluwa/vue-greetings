@@ -13,7 +13,11 @@ Vue.component("vue-greeting", VueGreeting);
 **then in vue components**
 
 ```html
-<vue-greeting></vue-greeting>
+<template>
+  <div>
+    <vue-greetings />
+  </div>
+</template>
 ```
 
 ## Register as Local Component

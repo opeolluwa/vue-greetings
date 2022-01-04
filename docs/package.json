@@ -10,13 +10,12 @@
   "repository": "https://github.com/opeolluwa/vue-greetings/vue-greetings",
   "scripts": {
     "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "build": "vuepress build src",
+    "deploy": "npm run build && npx gh-pages docs/.vuepress/dist"
   },
   "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "vuepress": "^1.5.3"
-  },
-  "dependencies": {
-    "vue-greetings": "^0.1.8"
   }
 }

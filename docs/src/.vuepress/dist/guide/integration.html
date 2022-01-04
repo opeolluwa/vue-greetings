@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Integration | Vue Greetings</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    
+    <meta name="description" content="A vue component that returns greeting based on day, time and season. Ideal for welcome messages in dashb">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/vue-greetings/assets/css/0.styles.ca9b1690.css" as="style"><link rel="preload" href="/vue-greetings/assets/js/app.16b67751.js" as="script"><link rel="preload" href="/vue-greetings/assets/js/2.13707c7f.js" as="script"><link rel="preload" href="/vue-greetings/assets/js/14.581b053a.js" as="script"><link rel="prefetch" href="/vue-greetings/assets/js/10.e8f0e782.js"><link rel="prefetch" href="/vue-greetings/assets/js/11.ff5aa3fd.js"><link rel="prefetch" href="/vue-greetings/assets/js/12.8a14c302.js"><link rel="prefetch" href="/vue-greetings/assets/js/13.c7f005e5.js"><link rel="prefetch" href="/vue-greetings/assets/js/15.a649e50e.js"><link rel="prefetch" href="/vue-greetings/assets/js/16.a7ac794b.js"><link rel="prefetch" href="/vue-greetings/assets/js/3.ad8da986.js"><link rel="prefetch" href="/vue-greetings/assets/js/4.7797b3f8.js"><link rel="prefetch" href="/vue-greetings/assets/js/5.ede68e1d.js"><link rel="prefetch" href="/vue-greetings/assets/js/6.33a534c0.js"><link rel="prefetch" href="/vue-greetings/assets/js/7.0f6b7a1f.js"><link rel="prefetch" href="/vue-greetings/assets/js/8.30a1f805.js"><link rel="prefetch" href="/vue-greetings/assets/js/9.c8afc53d.js">
+    <link rel="stylesheet" href="/vue-greetings/assets/css/0.styles.ca9b1690.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-greetings/" class="home-link router-link-active"><!----> <span class="site-name">Vue Greetings</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-greetings/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/vue-greetings/demo/" class="nav-link">
+  Demo
+</a></div><div class="nav-item"><a href="https://github.com/opeolluwa/vue-greetings" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-greetings/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/vue-greetings/demo/" class="nav-link">
+  Demo
+</a></div><div class="nav-item"><a href="https://github.com/opeolluwa/vue-greetings" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-greetings/guide/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/vue-greetings/guide/installation.html" class="sidebar-link">Installation</a></li><li><a href="/vue-greetings/guide/integration.html" aria-current="page" class="active sidebar-link">Integration</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue-greetings/guide/integration.html#register-as-a-global-component" class="sidebar-link">Register as a global component</a></li><li class="sidebar-sub-header"><a href="/vue-greetings/guide/integration.html#register-as-local-component" class="sidebar-link">Register as Local Component</a></li></ul></li><li><a href="/vue-greetings/guide/customization.html" class="sidebar-link">Customization</a></li><li><a href="/vue-greetings/guide/contributing.html" class="sidebar-link">Contributing</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="integration"><a href="#integration" class="header-anchor">#</a> Integration</h1> <p>Quicly integrate <a href="htttps://github.com/opeolluwa/vue-greetings">vue-greetings</a> into your projects</p> <h2 id="register-as-a-global-component"><a href="#register-as-a-global-component" class="header-anchor">#</a> Register as a global component</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> VueGreeting <span class="token keyword">from</span> <span class="token string">&quot;VueGreeting&quot;</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">&quot;vue-greeting&quot;</span><span class="token punctuation">,</span> VueGreeting<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>then in vue components</strong></p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>vue-greetings</span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="register-as-local-component"><a href="#register-as-local-component" class="header-anchor">#</a> Register as Local Component</h2> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>vue-greetings</span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">import</span> VueGreetings <span class="token keyword">from</span> <span class="token string">&quot;vue-greetings&quot;</span><span class="token punctuation">;</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    components<span class="token operator">:</span> <span class="token punctuation">{</span>
+      VueGreetings<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-greetings/guide/installation.html" class="prev">
+        Installation
+      </a></span> <span class="next"><a href="/vue-greetings/guide/customization.html">
+        Customization
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vue-greetings/assets/js/app.16b67751.js" defer></script><script src="/vue-greetings/assets/js/2.13707c7f.js" defer></script><script src="/vue-greetings/assets/js/14.581b053a.js" defer></script>
+  </body>
+</html>

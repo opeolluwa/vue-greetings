@@ -1,6 +1,6 @@
 ---
 home: true
-tagline: A vue component that returns greeting based on day, time and season. Ideal for welcome messages in dashb
+tagline: A vue component that returns greeting based on day, time and season. Ideal for welcome messages in dashboard
 actionText: Quick Start →
 actionLink: /guide/
 features:
