@@ -40,7 +40,7 @@ export default {
 }
 </script>
 ```
-
+If the plugin has helped in some way, consider [buying me a coffee ☕](https://getfidia.com/pay/opeolluwa/Opeolluwa)
 ## Demo
 See live [demo](https://vue-greetings.vercel.app/)
 
