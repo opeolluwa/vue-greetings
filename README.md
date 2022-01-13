@@ -41,10 +41,13 @@ export default {
 </script>
 ```
 ## Support me 
-If the plugin has helped in some way, consider [buying me a coffee ☕](https://getfidia.com/pay/opeolluwa/Opeolluwa)
+<h1 style="font-weight:800">Hi, I'm Opeoluwa! 👋</h1>
+I'm a full stack developer devoted to building community project...
 
-## Demo
-See live [demo](https://vue-greetings.vercel.app/)
+
+If you find the plugin helpful, consider [buying me a pizza 🍕](https://getfidia.com/pay/opeolluwa/open-source)
+
+
 
 
 
