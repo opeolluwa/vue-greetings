@@ -41,7 +41,7 @@ export default {
 </script>
 ```
 ## Support me 
-<h1 style="font-weight:800">Hi, I'm Opeoluwa! 👋</h1>
+<p style="font-weight:800">Hi, I'm Opeoluwa! 👋</p>
 I'm a full stack developer devoted to building community project...
 
 
