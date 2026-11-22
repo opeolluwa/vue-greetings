@@ -1,53 +1,59 @@
 # Vue Greetings
 
-A vue component that returns greeting based on day, time and season. Ideal for welcome messages in dashboard and user profile 
+A Vue 3 component that returns greeting based on day, time and season. Ideal for welcome messages in dashboard and user profile.
 
 ## Installation
-- Vue CLI
+
 ```bash
-npm install vue-greetings
-``` 
-- script tag
-```html
-<script src="https://unpkg.com/vue-greetings@0.1.7/dist/vue-greetings.min.js"></script>
-```
-## Basic Use
-- Register as a global component
-```js
-import Vue from "vue";
-import VueGreeting from "VueGreeting";
-Vue.component("vue-greeting", VueGreeting);
-```
-then in vue components
-```html
-<vue-greeting></vue-greeting>
+pnpm add vue-greetings
 ```
 
-- Register as Local Component
+## Usage
+
+### Plugin (Global Registration)
+
+```ts
+import { createApp } from 'vue'
+import VueGreetings from 'vue-greetings'
+import App from './App.vue'
+
+const app = createApp(App)
+app.use(VueGreetings)
+app.mount('#app')
+```
+
+Then in any component:
+
 ```html
 <template>
-  <div>
-    <vue-greetings/>
-  </div>
+  <VueGreetings />
+</template>
+```
+
+### Local Registration
+
+```html
+<template>
+  <VueGreetings />
 </template>
 
-<script>
-import VueGreetings from "vue-greetings"
-export default {
-  components:{
- VueGreetings
-  }
-}
+<script setup lang="ts">
+import { VueGreetings } from 'vue-greetings'
 </script>
 ```
-## Support me 
-<p style="font-weight:800">Hi, I'm Opeoluwa! 👋</p>
-I'm a full stack developer devoted to building community project...
 
+### Using the Greeting Function Directly
 
-If you find the plugin helpful, consider [buying me pizza 🍕](https://getfidia.com/pay/opeolluwa/open-source)
+```ts
+import { getGreeting } from 'vue-greetings'
 
+const message = getGreeting()
+```
 
+## Support me
 
+Hi, I'm Opeoluwa!
 
+I'm a full stack developer devoted to building community projects...
 
+If you find the plugin helpful, consider [buying me pizza](https://getfidia.com/pay/opeolluwa/open-source)

@@ -1,17 +1,9 @@
-<script>
-import Vue from "vue";
-import VueGreetings from "@/VueGreetings.vue";
-
-export default Vue.extend({
-  name: "ServeDev",
-  components: {
-    VueGreetings,
-  },
-});
+<script setup lang="ts">
+import VueGreetings from '../src/VueGreetings.vue'
 </script>
 
 <template>
   <div id="app">
-    <vue-greetings />
+    <VueGreetings />
   </div>
 </template>

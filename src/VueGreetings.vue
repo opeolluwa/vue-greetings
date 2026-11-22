@@ -1,23 +1,20 @@
 <template>
-  <div class="vue__greetings">{{ message }}</div>
+  <div class="vue__greetings">{{ greeting }}</div>
 </template>
 
-<script>
-const { message } = require("./greeting");
-export default {
-  data() {
-    return {
-      message,
-    };
-  },
-  //TODO:
-  props: {
-    username: {
-      type: String,
-      required: false,
-    },
-  },
-};
+<script setup lang="ts">
+import { ref, onMounted } from 'vue'
+import { getGreeting } from './greeting'
+
+defineProps<{
+  username?: string
+}>()
+
+const greeting = ref(getGreeting())
+
+onMounted(() => {
+  greeting.value = getGreeting()
+})
 </script>
 
 <style scoped>
