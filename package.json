@@ -23,6 +23,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
+    "prepare": "vite build",
     "typecheck": "vue-tsc --noEmit"
   },
   "devDependencies": {

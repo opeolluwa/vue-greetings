@@ -50,10 +50,3 @@ import { getGreeting } from 'vue-greetings'
 const message = getGreeting()
 ```
 
-## Support me
-
-Hi, I'm Opeoluwa!
-
-I'm a full stack developer devoted to building community projects...
-
-If you find the plugin helpful, consider [buying me pizza](https://getfidia.com/pay/opeolluwa/open-source)
